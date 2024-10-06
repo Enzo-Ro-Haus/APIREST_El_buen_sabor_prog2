@@ -1,0 +1,172 @@
+agregaron las clases y le pusieron el builder superbuilde a las hijas
+
+
+Article x categoryId		
+							/SupplyItem/Category/id
+							/manofacturedArticle/Category/id
+
+Categoria: 	x categoriaPadre	/Category/FatherCategory/id
+			x sucursal			/Category/Branch/id	
+		
+DetallePedido: x pedido		/OrderDetails/Order/id
+
+Domicilio: 	x localidad		/Address/Area/id
+			x provincia		/Address/Province/id
+			x pais			/Address/Country/id
+			x cliente		/Address/Client/id
+			
+Empleado: x sucursal		/Employee/Branch/id
+
+Factura: x pedido			/Bill/Order/id
+
+Pedido: x cliente			/Order/Client/{clientId}
+		x empleado 			/Order/Employee/{employeeId}
+		x sucursal			/Order/Branch/{branchId}
+
+Sucursal: x empresa			/Branch/Company/id
+
+Promociones: x sucursal		/Promotions/Branch/id
+
+ArticuloManufacturadoDetalle: 	x articuloInsumo 			/manofacturedArticleDetails/SupplyItem/{supplyItemId}
+								x articuloManufacturado		/manofacturedArticleDetails/ManofacturedArticle/{manofacturedArticleId}
+
+Article
+	getAll:		/Article
+	GetById:	/Article/id
+	Post:		/Article
+	Put:		/Article
+	Delete:		/Article/id
+	
+User
+	getAll:		/User
+	GetById:	/User/id
+	Post:		/User
+	Put:		/User
+	Delete:		/User/id
+	
+Province
+	getAll:		/Province
+	GetById:	/Province/id
+	Post:		/Province
+	Put:		/Province
+	Delete:		/Province/id
+	
+Promotion
+	getAll:		/Promotions
+	GetById:	/Promotions/id
+	Post:		/Promotions
+	Put:		/Promotions
+	Delete:		/Promotions/id
+	
+Company
+	getAll:		/Company
+	GetById:	/Company/id
+	Post:		/Company
+	Put:		/Company
+	Delete:		/Company/id
+	
+Country
+	getAll:		/Country
+	GetById:	/Country/id
+	Post:		/Country
+	Put:		/Country
+	Delete:		/Country/id
+	
+Image
+	getAll:		/Image
+	GetById:	/Image/id
+	Post:		/Image
+	Put:		/Image
+	Delete:		/Image/id
+	
+Order
+	getAll:		/Order
+	GetById:	/Order/id
+	Post:		/Order
+	Put:		/Order
+	Delete:		/Order/id
+	
+Area
+	getAll:		/Area
+	GetById:	/Area/id
+	Post:		/Area
+	Put:		/Area
+	Delete:		/Area/id
+	
+Bill
+	getAll:		/Bill
+	GetById:	/Bill/id
+	Post:		/Bill
+	Put:		/Bill
+	Delete:		/Bill/id
+	
+Category
+	getAll:		/Category
+	GetById:	/Category/id
+	Post:		/Category
+	Put:		/Category
+	Delete:		/Category/id
+	
+Address
+	getAll:		/Address
+	GetById:	/Address/id
+	Post:		/Address
+	Put:		/Address
+	Delete:		/Address/id
+	
+Client
+	getAll:		/Client
+	GetById:	/Client/id
+	Post:		/Client
+	Put:		/Client
+	Delete:		/Client/id
+	
+Branch
+	getAll:		/Branch
+	GetById:	/Branch/id
+	Post:		/Branch 
+	Put:		/Branch
+	Delete:		/Branch/id
+	
+Employee
+	getAll:		/Employee
+	GetById:	/Employee/id
+	Post:		/Employee
+	Put: 		/Employee
+	Delete:		/Employee/id
+
+
+SupplyItem
+	getAll:		/SupplyItem
+	GetById:	/SupplyItem/id
+	Post:		/Client
+	Put:		/Client
+	Delete: 	/SupplyItem/id
+	
+ManofacturedArticle
+	getAll:		/manofactured_article
+	GetById:	/manofactured_article/id
+	Post:		/manofactured_article
+	Put:		/manofactured_article
+	Delete:		/manofactured_article/id
+	
+PromotionDetails
+	getAll:		/promotionDetails
+	GetById:	/promotionDetails/id
+	Post:		/promotionDetails
+	Put:		/promotionDetails
+	Delete:		/promotionDetails/id
+	
+ManofacturedArticleDetails
+	getAll:		/manofacturedArticleDetails
+	GetById:	/manofacturedArticleDetails/id
+	Post:		/manofacturedArticleDetails
+	Put:		/manofacturedArticleDetails
+	Delete:		/manofacturedArticleDetails/id
+	
+ClientUser
+	getAll:		/ClientUser
+	GetById:	/ClientUser/id
+	Post:		/ClientUser
+	Put:		/ClientUser
+	Delete:		/ClientUser/id
